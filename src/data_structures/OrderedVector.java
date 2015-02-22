@@ -33,9 +33,8 @@ public class OrderedVector<E> implements OrderedListADT<E> {
     }
     /*2. Removes the object located at the paramater index position
 (zero-based).*/
-    /*3. Throws IndexOutofBoundsException if the index does not map to a
-valid
-     position within the list.*/
+ /*3. Throws IndexOutofBoundsException if the index does not map to a
+valid position within the list.*/
 
     public E remove(int index) {
         if(index>currentSize-1 || index<0){
@@ -50,8 +49,7 @@ valid
      return tempObject;
     }
     /*4. Removes and returns the parameter object obj from the list if the
-list
-     contains it, null otherwise.*/
+list contains it, null otherwise.*/
 
     public E remove(E obj) {
         int findThis = binSearchFindObjectIndex(obj, 0, currentSize - 1);
@@ -99,8 +97,7 @@ list
         return currentSize;
     }
     /*12. Returns an iterator of the values in the list, presented in the
-same
-     order as the list.*/
+same order as the list.*/
     /*This part of the code was copied from Riggins' SlowContainer program.*/
 
     public Iterator<E> iterator() {
